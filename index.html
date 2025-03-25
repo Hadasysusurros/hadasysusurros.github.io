@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadas y Susurros</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="./src/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="firefly-container"></div>
+
+    <header>
+        <h1 class="glow-text mb"><a href="./index.html">Hadas y Susurros</a></h1>
+        <p class="slogan">Adéntrate en el bosque y descubre la magia en cada sorbo</p>
+        <a href="./pages/membership.html" class="membership-btn">Hazte socio!</a>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="./src/Carta - Hadas y Susurros.pdf" target="_blank">Carta</a></li>
+            <li><a href="./pages/us.html">Quiénes somos</a></li>
+            <li><a href="./pages/events.html">Eventos</a></li>
+            <li><a href="./pages/ourbooks.html">Títulos disponibles</a></li>
+            <li><a href="./pages/contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="gallery-container">
+        <h2>Nuestros productos mágicos</h2>
+        <div class="gallery-wrapper">
+            <button class="arrow left" id="a-left" onclick="moveGallery('left')">&#10094;</button>
+            <div class="gallery" id="gallery"></div>
+            <button class="arrow right" id="a-right" onclick="moveGallery('right')">&#10095;</button>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-img">
+        <span id="lightbox-caption" class="lightbox-caption"></span>
+    </div>
+
+    <section class="card" onclick="window.open('./src/Carta - Hadas y Susurros.pdf', '_blank')">
+        <h2>Nuestra Carta</h2>
+        <p>Explora una selección de cafés y postres encantados</p>
+    </section>
+    <section class="card" onclick="window.location.href='./pages/us.html';">
+        <h2>Quiénes somos</h2>
+        <p>Descubre la historia detrás de nuestra cafetería y lo que nos hace únicos</p>
+    </section>
+    <section class="card" onclick="window.location.href='./pages/contact.html';">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros para más información</p>
+    </section>
+    <img src="./src/logo1_nobg.png" alt="Logo Hadas y Susurros" width="200px">
+    <footer>
+    <a href="https://www.instagram.com/hadasysusurros" target="_blank">
+        <img src="./src/instagram_icon.png" alt="Instagram" width="30px">
+    </a>
+        <p>&copy; 2025 Hadas y Susurros</p>
+    </footer>
+</body>
+
+</html>

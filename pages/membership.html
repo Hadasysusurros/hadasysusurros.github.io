@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club lector mágico</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../src/favicon.ico">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="firefly-container"></div>
+
+    <header>
+        <h1 class="glow-text mb"><a href="../index.html">Hadas y Susurros</a></h1>
+        <p class="slogan">Adéntrate en el bosque y descubre la magia en cada sorbo</p>
+        <a href="./membership.html" class="membership-btn">Hazte socio!</a>
+    </header>
+    <nav>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul>
+            <li><a href="../src/Carta - Hadas y Susurros.pdf" target="_blank">Carta</a></li>
+            <li><a href="./us.html">Quiénes somos</a></li>
+            <li><a href="./events.html">Eventos</a></li>
+            <li><a href="./ourbooks.html">Títulos disponibles</a></li>
+            <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section class="us">
+        <h2 class="glow-text">¡ÚNETE A NUESTRO CLUB LECTOR MÁGICO!</h2>
+        <p>¿Eres un amante de los libros? ¿Buscas nuevas historias que te transporten a mundos mágicos? Entonces,
+            nuestro Club de Lectura es perfecto para ti. Únete a nuestra comunidad y disfruta de los mejores títulos,
+            debates enriquecedores y una experiencia literaria única.</p>
+
+        <h3>¿Qué te ofrecemos?</h3>
+        <ul>
+            <li><strong>Selección Curada de Libros:</strong> Cada mes elegimos libros fascinantes para todos los gustos.
+            </li>
+            <li><strong>Acceso Gratuito:</strong> Accede a zonas exclusivas de nuestro local sin tener que pagar.</li>
+            <li><strong>Descuentos Especiales:</strong> ¡Consigue descuentos en nuestra sección de bebidas y comidas
+                solo por ser socio!</li>
+            <li><strong>Eventos con Autores:</strong> Encuentros especiales con escritores y otras actividades
+                literarias.</li>
+            <li><strong>Alquiler de libros:</strong> Ya no hace falta que compres el libro del momento. ¡Con el carnet
+                de socio podrás llevártelo a casa prestado!</li>
+        </ul>
+
+        <h3>Planes de Suscripción:</h3>
+        <ul>
+            <li><strong>Mensual:</strong> 4€/mes</li>
+            <li><strong>Anual:</strong> 18€/año (¡Y te regalamos un libro gratis todos los años!)</li>
+        </ul>
+
+        <p>¡Y lo mejor de todo es que puedes cancelar en cualquier momento! La lectura nunca fue tan divertida,
+            accesible y social.</p>
+
+        <h3>¿Listo para adentrarte en el bosque?</h3>
+        <p>Rellena nuestro formulario y únete a nuestro club ahora mismo.</p>
+        <form action="#" method="post" class="membership-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" disabled>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" disabled>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" disabled>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" disabled>
+
+            <fieldset>
+                <legend>Elige tu método de pago:</legend>
+                <label for="paypal">
+                    <input type="radio" id="paypal" name="metodo_pago" value="paypal" disabled> PayPal
+                </label>
+                <label for="bizum">
+                    <input type="radio" id="bizum" name="metodo_pago" value="bizum" disabled> Bizum
+                </label>
+                <label for="transferencia">
+                    <input type="radio" id="transferencia" name="metodo_pago" value="transferencia" disabled>
+                    Transferencia Bancaria
+                </label>
+                <label for="tarjeta">
+                    <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" checked disabled> Tarjeta de
+                    Crédito/Débito
+                </label>
+            </fieldset>
+
+            <div class="tarjeta-info">
+                <label for="numero_tarjeta">Número de tarjeta:</label>
+                <input type="text" id="numero_tarjeta" name="numero_tarjeta" maxlength="16" disabled>
+
+                <label for="fecha_expiracion">Fecha de Expiración:</label>
+                <input type="month" id="fecha_expiracion" name="fecha_expiracion" disabled>
+
+                <label for="codigo_seguridad">Código de Seguridad:</label>
+                <input type="text" id="codigo_seguridad" name="codigo_seguridad" maxlength="3" disabled>
+            </div>
+
+            <button type="submit" class="submit-btn" disabled>Unirme al Club</button>
+        </form>
+
+        <img src="../src/logo1_nobg.png" alt="Logo Hadas y Susurros" width="200px">
+    </section>
+    <footer>
+        <a href="https://www.instagram.com/hadasysusurros" target="_blank">
+            <img src="../src/instagram_icon.png" alt="Instagram" width="30px">
+        </a>
+        <p>&copy; 2025 Hadas y Susurros</p>
+    </footer>
+</body>
+
+</html>
